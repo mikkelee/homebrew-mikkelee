@@ -7,9 +7,7 @@ class Opensift < Formula
   depends_on "opencv@2"
   depends_on "gtk+"
 
-  def patches
-    :DATA
-  end
+  patch :DATA
 
   def install
     system "make", "libopensift.a"
