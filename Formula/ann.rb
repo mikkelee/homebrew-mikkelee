@@ -5,9 +5,7 @@ class Ann < Formula
   sha256 "eea03f2e224b66813226d775053316675375dcec45bd263674c052d9324a49a5"
   version "1.1.2"
 
-  def patches
-    :DATA
-  end
+  patch :DATA
 
   def install
     system "make", "macosx-g++"
